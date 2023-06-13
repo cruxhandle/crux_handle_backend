@@ -13,7 +13,7 @@ app.use(express.json())
 app.post("/send_mail", async (req, res) => {
     try {
         await send_mail(req.body)
-        res.send({ message: "mail sent" })
+        res.send("OK")
     } catch (error) {
         res.status(400).send({
             message: "something went wrong"
