@@ -12,7 +12,7 @@ const send_mail = async (mail_obj) => {
     try {
         let result = await transporter.sendMail({
             from: `"CruxHandle" <${process.env.MAIL_ADDR}>`,
-            to: "aakash.kshatriya@outlook.com",
+            to: "aakash.kshatriya@cruxhandle.com",
             replyTo: mail_obj.email,
             subject: mail_obj.subject,
             text: `Name ${mail_obj.name} \n\n ${mail_obj.message}`
